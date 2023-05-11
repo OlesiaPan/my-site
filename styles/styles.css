@@ -1,0 +1,475 @@
+@font-face {
+  font-family: "Baloo Bhai 2";
+  src: url("../fonts/Baloo\ Bhai/BalooBhai2-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter/Inter-Regular.woff2") format("woff2");
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 100%;
+  min-width: 1440px;
+  margin: 0;
+  font-family: "Baloo Bhai 2", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+  background-color: #2B50D6;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page-container {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+
+/* page-header */
+
+.page-header {
+  background-color: rgb(112, 112, 112, 0.2);
+  height: 121px;
+
+}
+
+
+.main-nav__closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 33px;
+  left: 31px;
+  width: 77px;
+  height: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 35px 0 0 #ffffff, 0 18px 0 0 #ffffff;
+  border-radius: 5px;
+  padding-left: 50px;
+}
+
+.main-nav__closed .main-nav__toggle:active::before {
+  background-color: fade(#ffffff, 30%);
+  box-shadow:
+    0 1px 0 0 fade(#ffffff, 30%),
+    0 18px 0 0 fade(#ffffff, 30%);
+}
+
+.main-nav {
+  display: flex;
+  gap: 50px;
+  width: 815px;
+  height: 121px;
+  padding-top: 29px;
+}
+
+.main-nav__search-form {
+  background: #FFFFFF;
+  border-radius: 10px;
+  width: 536px;
+  height: 51px;
+  padding-left: 31px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #707070;
+}
+
+.main-nav__toggle {
+  width: 77px;
+  height: 50px;
+}
+
+.button-toggle {
+  margin-left: 31px;
+}
+
+.main-nav__icon {
+  position: absolute;
+  display: flex;
+  top: 58px;
+  transform: translate(50%, -50%);
+  padding-left: 4px;
+}
+
+
+/* intro */
+
+.intro-page__title {
+  font-family: 'Baloo Bhai 2', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 68.5px;
+  line-height: 111px;
+  margin: 0;
+  padding: 0;
+  margin-left: 144px;
+  margin-top: 55px;
+}
+
+.intro-page__subtitle {
+  margin: 0;
+  padding: 0;
+  font-family: 'Baloo Bhai 2', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40.5px;
+  line-height: 66px;
+  margin-left: 148px;
+}
+
+.intro {
+  display: flex;
+  height: 926px;
+}
+
+.intro::before {
+  content: "";
+  position: absolute;
+  width: 88px;
+  height: 88px;
+  background-color: #ffffffff;
+  border-radius: 50%;
+  top: 869px;
+  right: 693px;
+}
+
+
+
+
+.intro-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 248px;
+  height: 248px;
+  top: 571px;
+  background-color: #ffffffff;
+  border-radius: 50%;
+  right: 475px;
+}
+
+.intro-page::before {
+  background-origin: border-box;
+  content: "";
+  position: absolute;
+  height: 762px;
+  background-image: url("../images/главный элипс.svg");
+  right: 0px;
+  top: -169px;
+  width: 717px;
+  z-index: -1;
+}
+
+
+.intro-wrapper {
+  display: flex;
+}
+
+
+
+.intro-second {
+  width: 398px;
+  height: 300px;
+  margin-left: 335px;
+  margin-top: 10px;
+}
+
+.intro-second__button {
+  width: 398px;
+  height: 70px;
+  left: 1382px;
+  top: 387px;
+  background: #3931FC;
+  border-radius: 14px;
+  margin-top: 46px;
+  text-align: center;
+}
+
+.intro-page__wrapper {
+  position: relative;
+}
+
+.intro-second__sub-text {
+  font-family: 'Baloo Bhai 2', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 39px;
+  line-height: 63px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 0;
+  margin: 0;
+}
+
+.intro-page__img {
+  padding-top: 30px;
+}
+
+.intro-page__icon {
+  display: flex;
+  right: -5px;
+  position: absolute;
+  top: 828px;
+  background-color: #ffffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  justify-content: center;
+}
+
+
+/* study */
+
+.study {
+  height: 866px;
+  background-color: #fff;
+  width: 100%;
+}
+
+.study-wrapper {
+  background: url("../images/иговые\ иконки\ пнг\ 2.png") repeat;
+  height: 866px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.study-work {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #2B50D6;
+  opacity: 0.95;
+  border-radius: 132px;
+  width: 1088px;
+  height: 581px;
+  margin-top: 146px;
+  margin-bottom: 139px;
+}
+
+.study-work__icon {
+  display: flex;
+  background-color: #ffffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  justify-content: center;
+  margin-top: 41px;
+}
+
+.study-work__title {
+  font-family: 'Baloo Bhai 2', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 65px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 57px;
+}
+
+.study-work__list-text {
+  font-family: 'Baloo Bhai 2', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 65px;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+/* management */
+
+.management-header__title {
+  font-family: 'Baloo Bhai 2', sans-serif;
+  font-weight: 700;
+  font-size: 70.5px;
+  line-height: 114px;
+  color: #FFFFFF;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  margin-top: 90px;
+}
+
+.management-header__icon {
+  display: flex;
+  background-color: #ffffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  justify-content: center;
+}
+
+.management-header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.management-list__item {
+  display: flex;
+}
+
+.management-list__item-icon {
+  display: flex;
+  background-color: #ffffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  justify-content: center;
+  margin-left: 80px;
+  margin-right: 64px;
+  margin-top: 40px;
+}
+
+.management-list__item-img {
+  margin-bottom: 65px;
+}
+
+.management-item__subtitle {
+  font-family: 'Baloo Bhai 2', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 65px;
+  margin: 0;
+  padding: 0;
+  margin-top: 32px;
+  color: #FFFFFF;
+}
+
+.management-wrapper {
+  width: 1750px;
+  margin: 0 auto;
+}
+
+.management-wrapper::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 1336px;
+  border: 2px solid #FFFFFF;
+  transform: rotate(90deg);
+  margin-left: -392px;
+  margin-top: -755px;
+  z-index: -1;
+}
+
+.management {
+  position: relative;
+  margin-bottom: 230px;
+}
+
+/* conclusion */
+
+.conclusion {
+  position: relative;
+}
+
+.conclusion-wrapper {
+  width: 1692px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.conclusion-title__text {
+  margin: 0;
+  padding: 0;
+  border-top: 5px solid #ffffffff;
+  padding-top: 80px;
+  font-family: 'Baloo Bhai 2', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40.5px;
+  line-height: 66px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 72px;
+}
+
+.conclusion-button {
+  background: #2D19AE;
+  border: 1px solid #FFFFFF;
+  border-radius: 14px;
+  width: 398px;
+  height: 70px;
+  margin-top: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.conclusion-sub {
+  font-family: 'Baloo Bhai 2', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 39px;
+  line-height: 63px;
+  text-align: center;
+  color: #FFFFFF;
+
+}
+
+.conclusion-icon {
+  display: flex;
+  background-color: #ffffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+
+/* page-footer */
+
+.page-footer {
+  background-color: #2D19AE;
+  height: 239px;
+  display: flex;
+  align-items: center;
+}
+
+.page-footer__pic {
+  width: 114px;
+  height: 114px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.page-footer__wrapper {
+  width: 1700px;
+  margin: 0 auto;
+}
