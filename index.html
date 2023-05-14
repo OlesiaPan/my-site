@@ -3,20 +3,64 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>КиберСпорт</title>
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="styles/reset.css">
 
+ 
 </head>
 
 <body>
   <header class="page-header">
     <div class="page-header__container">
       <nav class="main-nav main-nav__closed">
-        <div class="button-toggle">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__button-toggle">
+          <button class="main-nav__toggle" type="button"  id="burger"><span></span><span></span><span></span></button>
         </div>
+        <div class="main-nav__menu">
+        <ul class="main-nav__menu-list">
+          <li class="main-nav__menu-item">
+              <a class="main-nav__menu-link" href="#">
+                ГЛАВНОЕ
+              </a>
+          </li>
+          <li class="main-nav__menu-item">
+              <a class="main-nav__menu-link" href="#">
+                ПРОФИЛЬ
+              </a>
+          </li>
+          <li class="main-nav__menu-item">
+              <a class="main-nav__menu-link" href="#">
+                ВЕБИНАРЫ
+              </a>
+          </li>
+          <li class="main-nav__menu-item">
+              <a class="main-nav__menu-link" href="#">
+                ЗАДАНИЯ
+              </a>
+          </li>
+
+          <li class="main-nav__menu-item">
+            <a class="main-nav__menu-link" href="#">
+              КОНТАКТЫ
+            </a>
+        </li>
+
+        <li class="main-nav__menu-item">
+          <a class="main-nav__menu-link" href="#">
+            КАЛЕНДАРЬ
+          </a>
+      </li>
+
+      <li class="main-nav__menu-item">
+        <a class="main-nav__menu-link" href="#">
+          МЕРОПРИЯТИЯ
+        </a>
+    </li>
+      </ul>
+      </div>
         <div class="main-nav__profile">
           <a href="#" class="main-nav__link">
             <svg class="main-nav__link-icon" width="69" height="52" viewBox="0 0 69 52" fill="none"
@@ -295,5 +339,6 @@
     </div>
   </footer>
 </body>
+<script defer src="js/main.js"></script>
 
 </html>

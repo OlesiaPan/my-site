@@ -72,19 +72,39 @@ body {
   }
 }
 
+.button-toggle {
+  z-index: 2;
+}
 
-.main-nav__closed .main-nav__toggle::before {
-  content: "";
+
+.main-nav__toggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    z-index: 2;
+    margin-top: -10px;
+}
+.main-nav__toggle span { 
   position: absolute;
-  top: 27px;
-  left: 31px;
   width: 60px;
   height: 9px;
   background-color: #ffffff;
-  box-shadow: 0 35px 0 0 #ffffff, 0 18px 0 0 #ffffff;
   border-radius: 5px;
-  padding-left: 50px;
+  z-index: 2;
+  margin-left: -24px;
 }
+
+.main-nav__toggle span:nth-child(1) {
+  transform: translateY(-15px);
+}
+
+.main-nav__toggle span:nth-child(3) {
+  transform: translateY(15px);
+}
+
+
 
 @media(min-width:1920px) {
   .main-nav__closed .main-nav__toggle::before {
@@ -94,12 +114,6 @@ body {
   }
 }
 
-.main-nav__closed .main-nav__toggle:active::before {
-  background-color: fade(#ffffff, 30%);
-  box-shadow:
-    0 1px 0 0 fade(#ffffff, 30%),
-    0 18px 0 0 fade(#ffffff, 30%);
-}
 
 
 .main-nav {
@@ -820,5 +834,85 @@ body {
 @media(min-width:1920px) {
   .page-footer__wrapper {
     width: 1750px;
+  }
+}
+
+.main-nav__menu {
+  position: absolute;
+  top: 0;
+  left: -350px;
+  width: 350px;
+  height: 708px;
+  background-color: #417AFF;;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+@media(min-width:1920px) {
+  .main-nav__menu {
+    width: 538px;
+    height: 1050px;
+    left: -550px;
+  }
+}
+
+.main-nav__menu-list {
+  list-style: none;
+  margin: 0;  
+  padding: 0;
+}
+
+
+
+.main-nav__menu-link {
+  display: block;
+  font-family: 'Baloo Bhai 2', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  width: 350px;
+  font-size: 21px;
+  line-height: 65px;
+  color: #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+  padding: 0;
+  margin: 0;
+  padding-left:62px;
+  padding-bottom: 10px;
+}
+
+@media(min-width:1920px) {
+  .main-nav__menu-link {
+    font-size: 42px;
+    line-height: 65px;
+    width: 538px;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    margin-bottom: 20px;
+  }
+}
+
+.page-header.open .main-nav__toggle span  {
+  margin-left: 203px;
+}
+
+@media(min-width:1920px) {
+  .page-header.open .main-nav__toggle span {
+    margin-left: 351px;
+  }
+}
+
+.page-header.open .main-nav__menu {
+  transform: translateX(100%);
+}
+
+.main-nav__button-toggle {
+  margin-top: -6px;
+  margin-left: 32px;
+}
+
+@media(min-width:1920px) {
+  .main-nav__button-toggle {
+    margin-top: 0;
   }
 }
